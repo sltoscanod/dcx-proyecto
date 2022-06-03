@@ -1,0 +1,125 @@
+.poscionar-btn-Up{
+	float: right;
+	margin-right: 10vh;
+}
+
+.p-nav{
+	margin-right: 4vh;
+}
+
+.img-nav{
+	width: 3vh;
+}
+
+.texto-nav{
+	font-size: 14px;
+}
+
+.conf-vid{
+	height: 85vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.texto-Trade{
+	font-size: 20px;
+}
+
+.fs-19{
+	font-size: 19px;
+}
+
+.div-row-Sol{
+	height: 85vh;
+}
+
+.div-col-card{
+	width: 30%;
+	font-size: 19px;
+}
+
+.img-card{
+	width: 70%;
+}
+
+.cont-carousel{
+	height: 50vh;
+}
+
+.text-inner-car{
+	font-size: 19px;
+}
+
+.bg-ball-b{
+	background-color: blue;
+}
+
+.bg-ball-g{
+	background-color: green;
+}
+
+.bg-ball-p{
+	background-color: pink;
+}
+
+.txt-balls{
+	font-size: 20px;
+}
+
+.cont-news{
+	
+	background-color:#252c4a;
+}
+
+.txt-white{
+	color: #fafafb;
+}
+
+.box-news{
+	width: 40vh;
+	
+}
+
+.btn-news{
+	width: 20vh;	
+}
+
+.cont-links{
+	background-color:#1b2035;
+}
+
+.color-links{
+	text-decoration: none;
+	color: #cbccd1;
+}
+
+.btn-links1{
+
+	font-size: 22px;
+}
+
+.btn-links2{
+
+	font-size: 17px;
+}
+
+.color-icon{
+	text-decoration: none;
+	color: black;
+}
+
+.cont-terms{
+	background-color:#121521;
+	color: white;
+}
+.fondo-carrusel{
+	height: 450px;
+}
+
+.conf-img{
+	height: 35vh;
+}
+
+.padd{
+	padding: 0;
+}

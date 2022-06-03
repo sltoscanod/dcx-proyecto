@@ -1,0 +1,15 @@
+<div fxLayout="row">
+    <div class="img-bg" fxFlex="100%" fxLayout="column" fxLayoutAlign="center" [ngStyle]="{'background-image':temp(this.id)}">
+        <div class="banner-opacity" fxLayout="row" fxLayoutAlign="{{banner.data[this.id].position}}">
+            <div class="bg-white div-ban" fxLayout="column" fxLayoutAlign="center" fxFlex="50%"  fxLayoutGap="5px">
+                <img [src]="banner.data[this.id].img"><br>
+                <p *ngIf="banner.data[this.id].title" class="txt" fxLayout="column" fxLayoutAlign="center stretch"><strong>{{banner.data[this.id].title}}</strong></p><br>
+                <p class="txt">{{banner.data[this.id].body}}</p>
+                <br>
+                <div fxLayout="row" fxLayoutAlign="end">
+                    <button mat-flat-button class="conf-btn-ban fs-24" color="accent">Join Us Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

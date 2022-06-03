@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@angular/cdk": "^13.3.7",
+    "ngx-responsive-image": "^1.0.1"
+  }
+}

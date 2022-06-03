@@ -1,0 +1,30 @@
+<br>
+<br>
+<div fxLayout="row" fxLayoutAlign="center">
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="5vh">
+        <div fxLayout="row" fxLayoutAlign="center">
+            <div fxLayout="column" fxFlex="40%" fxLayoutAlign=" center">
+                <h1>Our Partners</h1>
+                <br>
+                <h3 class="center-text">DCX works together with the leading service providers in shipping, inspection and insurance. Partners
+                    are integrated with the trading platforms and users can book inspection services, raise shipping and
+                    insurance quotes at the click of a mouse.
+                </h3>
+            </div>
+        </div>
+        <div fxLayout="row wrap" fxLayoutAlign="center" fxLayoutGap.gt-md="30px">
+            <div *ngFor="let data of partners.data" fxLayoutAlign="center" fxLayout="column" fxFlex.lt-md="100%" fxFlex.md="100%" fxFlex.gt-md="30%">
+                <mat-card  fxLayout="column" fxLayoutAlign="center center" fxFlex="100%">
+                    <mat-card-header fxLayout="row" fxLayoutAlign="center">
+                        <img fxFlex="100%" [src]="data.img" class="pad-partners">
+                    </mat-card-header>
+                    <mat-card-content fxLayout="row" fxLayoutAlign="center">
+                        <p class="center-text"><br>{{data.body}}</p>
+                    </mat-card-content>
+                </mat-card>
+                <br>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
