@@ -10,54 +10,96 @@ import { InicioComponent } from './main/pages/inicio/inicio.component';
 import { RiceExchangeComponent } from './main/pages/rice-exchange/rice-exchange.component';
 import { OurPartnersComponent } from './main/pages/our-partners/our-partners.component';
 
-const routes: Routes = [
-  {
-    path: 'inicio',
-    component: InicioComponent
-  },
-  {
-    path: 'dcx-finance',
-    component: DcxFinanceComponent,
-  },
-  {
-    path: 'dcx-freight',
-    component: DcxFreightComponent
-  },
-  {
-    path: 'dcx-grain',
-    component: DcxGrainsComponent
-  },
-  {
-    path: 'dcx-insurance',
-    component: DcxInsuranceComponent
-  },
-  {
-    path: 'dcx-pulse',
-    component: DcxPulsesComponent
-  },
-  {
-    path: 'fertilizer-exchange',
-    component: FertilizerExchangeComponent
-  },
-  {
-    path: 'rice-exchange',
-    component: RiceExchangeComponent
-  },
-  {
-    path:'our-partners',
-    component: OurPartnersComponent
-  },
-  {
-    path: '',
-    redirectTo: 'inicio',
-    pathMatch: 'full'
-  }
-  // {
-  //   path: '**',
-  //   redirectTo: 'inicio'
-  // }
+// const routes: Routes = [
+//   {
+//     path: 'inicio',
+//     component: InicioComponent
+//   },
+//   {
+//     path: 'dcx-finance',
+//     component: DcxFinanceComponent,
+//   },
+//   {
+//     path: 'dcx-freight',
+//     component: DcxFreightComponent
+//   },
+//   {
+//     path: 'dcx-grain',
+//     component: DcxGrainsComponent
+//   },
+//   {
+//     path: 'dcx-insurance',
+//     component: DcxInsuranceComponent
+//   },
+//   {
+//     path: 'dcx-pulse',
+//     component: DcxPulsesComponent
+//   },
+//   {
+//     path: 'fertilizer-exchange',
+//     component: FertilizerExchangeComponent
+//   },
+//   {
+//     path: 'rice-exchange',
+//     component: RiceExchangeComponent
+//   },
+//   {
+//     path:'our-partners',
+//     component: OurPartnersComponent
+//   },
+//   {
+//     path: '',
+//     redirectTo: 'inicio',
+//     pathMatch: 'full'
+//   }
+//   // {
+//   //   path: '**',
+//   //   redirectTo: 'inicio'
+//   // }
 
+// ];
+
+
+const routes:Routes=[
+    
+  {
+      path:'trade',
+      children:[
+          {path: 'rice_exchange', component:RiceExchangeComponent},
+          {path : 'fertilizer_exchange',component:FertilizerExchangeComponent},
+          {path : 'dcx_pulses',component:DcxPulsesComponent},
+          {path:'dcx_grains',component:DcxGrainsComponent}
+          
+      ]
+      
+  },
+  {
+      path:'services',
+      children:[
+          {path:'dcx_finance',component:DcxFinanceComponent},
+          {path:'dcx_freight',component:DcxFreightComponent},
+          {path:'dcx_insurance',component:DcxInsuranceComponent}
+      ]
+  },
+  {
+      path:'',
+      component:InicioComponent,
+      pathMatch: 'full'
+  },
+  {
+        path:'our-partners',
+        component: OurPartnersComponent
+      },
+  {
+      path: '**',
+      redirectTo:''
+  }
 ];
+
+
+
+
+
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

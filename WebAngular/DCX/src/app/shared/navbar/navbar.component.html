@@ -1,245 +1,113 @@
-<!-- <nav id="navbar" class="navbar container navbar-expand-lg navbar-light mx-lg-auto mb-3 py-3">
-  <a class="navbar-brand" routerLink=""><img src="../../../assets/images/logo.svg" width="115"></a>
-  <div class="">
-              <button class="navbar-toggler border-0" type="button"  data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
-                  <i class=""></i>
-              </button>
-              <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-  </div>
-  <div class="collapse text-center navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-lg-0 align-items-start align-items-lg-center">
-          <li class="nav-item dropdown align-items-center" >
-              <div class="dropdown">
-                <button class="btn btn-block dropdown-toggle texto-nav" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Trade
-                </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" routerLink="rice-exchange" >Rice Exchange</a></li>
-                      <li><a class="dropdown-item" routerLink="fertilizer-exchange">Fertilizer Exchange</a></li>
-                      <li><a class="dropdown-item" routerLink="dcx-pulse">DCX Pulse</a></li>
-                      <li><a class="dropdown-item" routerLink="dcx-grain">DCX Grain</a></li>
-                  </ul>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block dropdown-toggle texto-nav" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">
-                  Services
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item" routerLink="dcx-finance">DCX Finance</a></li>
-                  <li><a class="dropdown-item" routerLink="dcx-freight">DCX Freight</a></li>
-                  <li><a class="dropdown-item" routerLink="dcx-insurance">DCX Insurance</a></li>
-                </ul>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block texto-nav" type="button" id="dropdownMenuButton1">
-                  Our Partners
-                </button>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block texto-nav" type="button" id="dropdownMenuButton1">
-                  Market Insights
-                </button>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block dropdown-toggle texto-nav" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Community
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <li><a class="dropdown-item">Social Media</a></li>
-                  <li><a class="dropdown-item">News & Updates</a></li>
-                  <li><a class="dropdown-item">Blog Posts</a></li>
-                </ul>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block texto-nav" type="button">
-                  About DCX
-                </button>
-              </div>
-          </li>
-          <li class="nav-item dropdown ">
-              <div class="dropdown">
-                <button class="btn btn-block texto-nav" type="button">
-                  Contact Us
-                </button>
-              </div>
-          </li>
-          <li class="nav-item dropdown d-none d-lg-inline">
-              <div class="dropdown">
-                <button class="btn rounded" type="button"  data-bs-toggle="collapse" data-bs-target="#search" aria-expanded="false" aria-controls="search">
-                  <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-              </div>
-          </li>
-          <li class="mx-2 my-lg-0 nav-item dropdown ">
-              <div class="dropdown">
-                  <button class="btn btn-block dropdown-toggle border-dark" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Login
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item w-50 py-2 px-4" href="#">Digital Commodity Exchange</a></li>
-                      <li><a class="dropdown-item w-50 py-2 px-4" href="#">Fertilizer Exchange</a></li>
-                      <li><a class="dropdown-item w-50 py-2 px-4" href="#">Rice Exchange</a></li>
-                  </ul>
-              </div>
-          </li>
-          <li class="mx-2 nav-item dropdown ">
-              <div class="dropdown">
-                  <button class="btn btn-block btn-warning dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                  Start trading
-                  </button>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item py-2 px-4" href="#">Fertilizers</a></li>
-                      <li><a class="dropdown-item py-2 px-4" href="#">Rice</a></li>
-                      <li><a class="dropdown-item py-2 px-4" href="#">Pulses</a></li>
-                      <li><a class="dropdown-item py-2 px-4" href="#">Grains</a></li>
-                      <li><a class="dropdown-item py-2 px-4" href="">Other Commodities</a></li>
-                  </ul>
-              </div>
-          </li>
-      </ul>
-  </div>
-</nav>
 
-Collapse Search
-<div id="search" class="container collapse">
-    <div class="row text-center">
-        <form class="col d-inline pt-2 m-0 mb-3">
-                <input type="text" name="text"class=" border-1 rounded">
-                <button class="btn btn-warning"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
-    </div>
-</div> -->
 
-<mat-card fxLayout="column" fxLayout="center center">
+<div fxLayout="column" fxLayout="center center" class="mat-elevation-z0">
   <mat-toolbar class="bg-white" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px"
     fxLayoutAlign.lt-lg="end">
-    <button mat-button fxFlex.lt-lg="100%" fxLayout.lt-lg="row" fxLayoutAlign.lt-lg="start">
-      <img src="../../../assets/images/logo.svg" routerLink="" width="110px">
-    </button>
+    
+    <mat-toolbar-row fxLayoutGap="10px" fxLayoutAlign="center center" fxHide fxShow.gt-lg="true">
+      <button mat-button  fxLayout.lt-lg="row" fxLayoutAlign.lt-lg="start">
+        <img src="../../../assets/images/logo.svg" routerLink="" width="110px">
+      </button>
 
-    <button mat-flat-button [matMenuTriggerFor]="Trade" fxHide.lt-lg="true">Trade<mat-icon>arrow_drop_down</mat-icon>
-    </button>
-    <mat-menu #Trade="matMenu" yPosition="below">
-      <button mat-menu-item routerLink="rice-exchange">Rice Exchange</button>
-      <button mat-menu-item routerLink="fertilizer-exchange">Fertilizer Exchange</button>
-      <button mat-menu-item routerLink="dcx-pulse">DCX Pulses</button>
-      <button mat-menu-item routerLink="dcx-grain">DCX Grains</button>
-    </mat-menu>
+      <div *ngFor="let item of _navBar.data; let i = index">
+        
+        <div *ngIf="item.subMenu.length!=0">
+          <button mat-button [matMenuTriggerFor]="trade">{{item.text}}<mat-icon
+            *ngIf="item.subMenu.length!=0">arrow_drop_down</mat-icon></button>
+            
+            <mat-menu #trade="matMenu">
+              <button mat-menu-item routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
+              *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
+              
+            </mat-menu>
+          </div>
+          <div *ngIf="item.subMenu.length==0">
+            <button mat-button>{{item.text}}</button>
+          </div>
+        </div>
+        <button mat-flat-button fxHide.lt-lg="true" [matMenuTriggerFor]="Contact">Contact Us <mat-icon>arrow_drop_down
+          </mat-icon></button>
+        <mat-menu #Contact="matMenu" yPosition="below">
+          <div fxLayout="row" fxLayoutAlign="space-between">
+            <button mat-button class="contact-padding">Contact Details</button>
+            <button mat-button class="contact-padding">Help Center-FAQs</button>
+          </div>
+          <div class="contact-padding" fxLayout="row" fxLayoutAlign="space-between">
+            <p>Lets's Talk
+              <img src="../../../assets/images/mail-n.png" width="20">
+              <img src="../../../assets/images/what-n.png" width="20">
+            </p>
+    
+            <p>Follow Us:
+              <img src="../../../assets/images/link-n.png" width="20">
+              <img src="../../../assets/images/face-n.png" width="20">
+            </p>
+    
+          </div>
+          
+      </mat-menu>
+      <button mat-button class="bg-search" (click)="searchBar.toggle()" fxFlexOrder.lt-lg="1">
+        <mat-icon><span class="material-symbols-outlined">
+            search
+          </span>
+        </mat-icon>
+      </button>
+  
+      <button mat-stroked-button [matMenuTriggerFor]="Login" fxHide.lt-lg="true" fxLayoutAlign="center">
+        Login<mat-icon>arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #Login="matMenu" yPosition="below">
+        <button mat-menu-item>Digital Commodity Exchange</button>
+        <button mat-menu-item>Fertilizer Exchange</button>
+        <button mat-menu-item>Rice Exchange</button>
+      </mat-menu>
+  
+      <button mat-flat-button color="accent" fxFlex.lt-sm="27%" fxFlex.lt-md="16%" fxFlex.lt-lg="13%"
+        [matMenuTriggerFor]="Start" fxFlexOrder.lt-lg="0">
+        Start trading<mat-icon>arrow_drop_down</mat-icon>
+      </button>
+      <mat-menu #Start="matMenu" yPosition="below">
+        <button mat-menu-item>Fertilizers</button>
+        <button mat-menu-item>Rice</button>
+        <button mat-menu-item>Pulses</button>
+        <button mat-menu-item>Grains</button>
+        <button mat-menu-item>Other Commodities</button>
+      </mat-menu>
+  
+      <button mat-flat-button fxHide.gt-md="true" class="bg-search" (click)="accordion.toggle()" fxFlexOrder.lt-lg="2" fx>
+        <mat-icon>
+          <span class="material-symbols-outlined">
+            menu
+          </span>
+        </mat-icon>
+  
+      </button>
+      </mat-toolbar-row>
+      <mat-toolbar-row fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" fxShow="true" fxHide.gt-lg>
 
-    <button mat-flat-button [matMenuTriggerFor]="Services" fxHide.lt-lg="true">Services <mat-icon>arrow_drop_down
-      </mat-icon></button>
-    <mat-menu #Services="matMenu" yPosition="below">
-      <button mat-menu-item routerLink="dcx-finance">DCX Finance</button>
-      <button mat-menu-item routerLink="dcx-freight">DCX Freight</button>
-      <button mat-menu-item routerLink="dcx-insurance">DCX Insurance</button>
-    </mat-menu>
+        <div>
+          <button mat-button routerLink=""><img src="../../../assets/images/logo.svg" width="100"></button>
 
-    <button mat-flat-button routerLink="our-partners" fxHide.lt-lg="true">
-      Our Partners
-    </button>
-    <button mat-flat-button fxHide.lt-lg="true">
-      Market Insights
-    </button>
+        </div>
+        <div>
+          <button mat-flat-button color="accent">Trade Now</button>
+          <button mat-button>
+              <mat-icon>search</mat-icon>
+          </button>
+          <button mat-button (click)="accordion.toggle()">
+              <mat-icon>menu</mat-icon>
+          </button>
 
-    <button mat-flat-button fxHide.lt-lg="true" [matMenuTriggerFor]="Community">Community <mat-icon>arrow_drop_down
-      </mat-icon></button>
-    <mat-menu #Community="matMenu" yPosition="below">
-      <button mat-menu-item>Social Media</button>
-      <button mat-menu-item>New & Updates</button>
-      <button mat-menu-item>Blogs Posts</button>
-    </mat-menu>
+        </div>
 
-    <button mat-flat-button fxHide.lt-lg="true">
-      About DCX
-    </button>
 
-    <button mat-flat-button fxHide.lt-lg="true" [matMenuTriggerFor]="Contact">Contact Us <mat-icon>arrow_drop_down
-      </mat-icon></button>
-    <mat-menu #Contact="matMenu" yPosition="below">
-      <div fxLayout="row" fxLayoutAlign="space-between">
-        <button mat-button class="contact-padding">Contact Details</button>
-        <button mat-button class="contact-padding">Help Center-FAQs</button>
-      </div>
-      <div class="contact-padding" fxLayout="row" fxLayoutAlign="space-between">
-        <p>Lets's Talk
-          <img src="../../../assets/images/mail-n.png" width="20">
-          <img src="../../../assets/images/what-n.png" width="20">
-        </p>
 
-        <p>Follow Us:
-          <img src="../../../assets/images/link-n.png" width="20">
-          <img src="../../../assets/images/face-n.png" width="20">
-        </p>
-
-      </div>
-    </mat-menu>
-
-    <button mat-button class="bg-search" (click)="searchBar.toggle()" fxFlexOrder.lt-lg="1">
-      <mat-icon><span class="material-symbols-outlined">
-          search
-        </span>
-      </mat-icon>
-    </button>
-
-    <button mat-stroked-button [matMenuTriggerFor]="Login" fxHide.lt-lg="true" fxLayoutAlign="center">
-      Login<mat-icon>arrow_drop_down</mat-icon>
-    </button>
-    <mat-menu #Login="matMenu" yPosition="below">
-      <button mat-menu-item>Digital Commodity Exchange</button>
-      <button mat-menu-item>Fertilizer Exchange</button>
-      <button mat-menu-item>Rice Exchange</button>
-    </mat-menu>
-
-    <button mat-flat-button color="accent" fxFlex.lt-sm="27%" fxFlex.lt-md="16%" fxFlex.lt-lg="13%"
-      [matMenuTriggerFor]="Start" fxFlexOrder.lt-lg="0">
-      Start trading<mat-icon>arrow_drop_down</mat-icon>
-    </button>
-    <mat-menu #Start="matMenu" yPosition="below">
-      <button mat-menu-item>Fertilizers</button>
-      <button mat-menu-item>Rice</button>
-      <button mat-menu-item>Pulses</button>
-      <button mat-menu-item>Grains</button>
-      <button mat-menu-item>Other Commodities</button>
-    </mat-menu>
-
-    <button mat-flat-button fxHide.gt-md="true" class="bg-search" (click)="accordion.toggle()" fxFlexOrder.lt-lg="2" fx>
-      <mat-icon>
-        <span class="material-symbols-outlined">
-          menu
-        </span>
-      </mat-icon>
-
-    </button>
+    </mat-toolbar-row>
 
   </mat-toolbar>
 
-  <div fxLayout="row" fxFlex="100" fxLayoutAlign="center">
-    <div fxLayout="column">
-      <mat-accordion>
-        <mat-expansion-panel #searchBar [expanded]="false">
-          <input>
-          <button mat-flat-button color="accent">
-            <mat-icon><span class="material-symbols-outlined">
-                search
-              </span></mat-icon>
-          </button>
-        </mat-expansion-panel>
-      </mat-accordion>
-    </div>
-  </div>
-</mat-card>
+  
+</div>
 
 <div class="mat-elevation-z3">
 
@@ -247,7 +115,33 @@ Collapse Search
 
     <mat-expansion-panel class="mat-elevation-z0" #accordion [expanded]="false">
       <mat-accordion #accordion>
-        <mat-expansion-panel class="mat-elevation-z0">
+
+
+
+        <div *ngFor="let item of _navBar.data;let i = index">
+          <mat-expansion-panel  class="mat-elevation-z0" *ngIf="item.subMenu.length!=0">
+              <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
+
+                  <div fxLayout="column" fxFlex="100%" fxLayoutAlign="start start" >
+                      <button mat-button fxFlex="100%" routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}" *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
+                  </div>
+                  
+          </mat-expansion-panel>
+
+
+          <mat-expansion-panel class="mat-elevation-z0" *ngIf="item.subMenu.length==0" [hideToggle]="true" #prueba (expandedChange)=prueba.close() class="mat-elevation-z0">
+              <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
+          </mat-expansion-panel>
+
+
+      
+      </div>
+      
+          <button mat-stroked-button>Login <mat-icon>expand_more</mat-icon></button>
+
+
+
+        <!-- <mat-expansion-panel class="mat-elevation-z0">
           <mat-expansion-panel-header>Trade</mat-expansion-panel-header>
 
           <div fxLayout="column" fxFlex="100%" fxLayoutAlign="start start">
@@ -295,10 +189,29 @@ Collapse Search
           <button mat-button="" (click)=accordion.close() fxLayoutAlign="start" class="btn-expanded">Digital Commodity Exchange</button>
           <button mat-button="" (click)=accordion.close() fxLayoutAlign="start" class="btn-expanded">Fertilizer Exchange</button>
           <button mat-button="" (click)=accordion.close() fxLayoutAlign="start" class="btn-expanded">Rice Exchange</button>
-        </mat-expansion-panel>
+        </mat-expansion-panel> -->
         <button mat-stroked-button (click)=accordion.close()>Login <mat-icon>expand_more</mat-icon></button>
       </mat-accordion>
     </mat-expansion-panel>
 
   </div>
 </div>
+
+
+
+<div fxLayout="row" fxLayoutAlign="center center">
+  <mat-expansion-panel fxLayout="column" fxLayoutAlign="center"   fxFlex="75%" #searchBar [expanded]="false" class="mat-elevation-z0">
+    <div class="div-supremo" fxLayoutAlign="center center" fxFlex="100%">
+
+      <mat-accordion fxLayout="row" fxLayoutAlign="center"  fxFlex="50%">
+        <input type="text" fxFlex="45%" placeholder="search..."/>
+        <button mat-flat-button color="accent"  class="btn-perso">
+          <mat-icon><span class="material-symbols-outlined">
+            search
+          </span></mat-icon>
+        </button>
+      </mat-accordion>
+    </div>
+  </mat-expansion-panel>
+</div>
+
