@@ -87,3 +87,15 @@ a:hover{
 .banner-opacity{
 	opacity:75% ;
 }
+
+
+.bg1{
+	background-color:red;
+	
+}
+.bg2{
+	background-color: yellow;
+}
+div {
+background-color:green;
+}
