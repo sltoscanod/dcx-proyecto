@@ -1,50 +1,48 @@
-
-
 <div fxLayout="column" fxLayout="center center" class="mat-elevation-z0">
   <mat-toolbar class="bg-white" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px"
     fxLayoutAlign.lt-lg="end">
-    
+
     <mat-toolbar-row fxLayoutGap="10px" fxLayoutAlign="center center" fxHide fxShow.gt-lg="true">
-      <button mat-button  fxLayout.lt-lg="row" fxLayoutAlign.lt-lg="start">
+      <button mat-button fxLayout.lt-lg="row" fxLayoutAlign.lt-lg="start">
         <img src="../../../assets/images/logo.svg" routerLink="" width="110px">
       </button>
 
       <div *ngFor="let item of _navBar.data; let i = index">
-        
+
         <div *ngIf="item.subMenu.length!=0">
-          <button mat-button [matMenuTriggerFor]="trade">{{item.text}}<mat-icon
-            *ngIf="item.subMenu.length!=0">arrow_drop_down</mat-icon></button>
-            
-            <mat-menu #trade="matMenu">
-              <button mat-menu-item routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
+          <button mat-button [matMenuTriggerFor]="trade">{{item.text}}<mat-icon *ngIf="item.subMenu.length!=0">
+              arrow_drop_down</mat-icon></button>
+
+          <mat-menu #trade="matMenu">
+            <button mat-menu-item routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
               *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
-              
-            </mat-menu>
-          </div>
-          <div *ngIf="item.subMenu.length==0">
-            <button mat-button>{{item.text}}</button>
-          </div>
+
+          </mat-menu>
         </div>
-        <button mat-flat-button fxHide.lt-lg="true" [matMenuTriggerFor]="Contact">Contact Us <mat-icon>arrow_drop_down
-          </mat-icon></button>
-        <mat-menu #Contact="matMenu" yPosition="below">
-          <div fxLayout="row" fxLayoutAlign="space-between">
-            <button mat-button class="contact-padding">Contact Details</button>
-            <button mat-button class="contact-padding">Help Center-FAQs</button>
-          </div>
-          <div class="contact-padding" fxLayout="row" fxLayoutAlign="space-between">
-            <p>Lets's Talk
-              <img src="../../../assets/images/mail-n.png" width="20">
-              <img src="../../../assets/images/what-n.png" width="20">
-            </p>
-    
-            <p>Follow Us:
-              <img src="../../../assets/images/link-n.png" width="20">
-              <img src="../../../assets/images/face-n.png" width="20">
-            </p>
-    
-          </div>
-          
+        <div *ngIf="item.subMenu.length==0">
+          <button mat-button routerLink="{{item.text | replace}}">{{item.text}}</button>
+        </div>
+      </div>
+      <button mat-flat-button fxHide.lt-lg="true" [matMenuTriggerFor]="Contact">Contact Us <mat-icon>arrow_drop_down
+        </mat-icon></button>
+      <mat-menu #Contact="matMenu" yPosition="below">
+        <div fxLayout="row" fxLayoutAlign="space-between">
+          <button mat-button class="contact-padding">Contact Details</button>
+          <button mat-button class="contact-padding">Help Center-FAQs</button>
+        </div>
+        <div class="contact-padding" fxLayout="row" fxLayoutAlign="space-between">
+          <p>Lets's Talk
+            <img src="../../../assets/images/mail-n.png" width="20">
+            <img src="../../../assets/images/what-n.png" width="20">
+          </p>
+
+          <p>Follow Us:
+            <img src="../../../assets/images/link-n.png" width="20">
+            <img src="../../../assets/images/face-n.png" width="20">
+          </p>
+
+        </div>
+
       </mat-menu>
       <button mat-button class="bg-search" (click)="searchBar.toggle()" fxFlexOrder.lt-lg="1">
         <mat-icon><span class="material-symbols-outlined">
@@ -52,7 +50,7 @@
           </span>
         </mat-icon>
       </button>
-  
+
       <button mat-stroked-button [matMenuTriggerFor]="Login" fxHide.lt-lg="true" fxLayoutAlign="center">
         Login<mat-icon>arrow_drop_down</mat-icon>
       </button>
@@ -61,7 +59,7 @@
         <button mat-menu-item>Fertilizer Exchange</button>
         <button mat-menu-item>Rice Exchange</button>
       </mat-menu>
-  
+
       <button mat-flat-button color="accent" fxFlex.lt-sm="27%" fxFlex.lt-md="16%" fxFlex.lt-lg="13%"
         [matMenuTriggerFor]="Start" fxFlexOrder.lt-lg="0">
         Start trading<mat-icon>arrow_drop_down</mat-icon>
@@ -73,32 +71,33 @@
         <button mat-menu-item>Grains</button>
         <button mat-menu-item>Other Commodities</button>
       </mat-menu>
-  
-      <button mat-flat-button fxHide.gt-md="true" class="bg-search" (click)="accordion.toggle()" fxFlexOrder.lt-lg="2" fx>
+
+      <button mat-flat-button fxHide.gt-md="true" class="bg-search" (click)="accordion.toggle()" fxFlexOrder.lt-lg="2"
+        fx>
         <mat-icon>
           <span class="material-symbols-outlined">
             menu
           </span>
         </mat-icon>
-  
+
       </button>
-      </mat-toolbar-row>
-      <mat-toolbar-row fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" fxShow="true" fxHide.gt-lg>
+    </mat-toolbar-row>
+    <mat-toolbar-row fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" fxShow="true" fxHide.gt-lg>
 
-        <div>
-          <button mat-button routerLink=""><img src="../../../assets/images/logo.svg" width="100"></button>
+      <div>
+        <button mat-button routerLink=""><img src="../../../assets/images/logo.svg" width="100"></button>
 
-        </div>
-        <div>
-          <button mat-flat-button color="accent">Trade Now</button>
-          <button mat-button>
-              <mat-icon>search</mat-icon>
-          </button>
-          <button mat-button (click)="accordion.toggle()">
-              <mat-icon>menu</mat-icon>
-          </button>
+      </div>
+      <div>
+        <button mat-flat-button color="accent">Trade Now</button>
+        <button mat-button>
+          <mat-icon>search</mat-icon>
+        </button>
+        <button mat-button (click)="accordion.toggle()">
+          <mat-icon>menu</mat-icon>
+        </button>
 
-        </div>
+      </div>
 
 
 
@@ -106,7 +105,7 @@
 
   </mat-toolbar>
 
-  
+
 </div>
 
 <div class="mat-elevation-z3">
@@ -119,25 +118,27 @@
 
 
         <div *ngFor="let item of _navBar.data;let i = index">
-          <mat-expansion-panel  class="mat-elevation-z0" *ngIf="item.subMenu.length!=0">
-              <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
+          <mat-expansion-panel class="mat-elevation-z0" *ngIf="item.subMenu.length!=0">
+            <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
 
-                  <div fxLayout="column" fxFlex="100%" fxLayoutAlign="start start" >
-                      <button mat-button fxFlex="100%" routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}" *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
-                  </div>
-                  
+            <div fxLayout="column" fxFlex="100%" fxLayoutAlign="start start">
+              <button mat-button fxFlex="100%" routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
+                *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
+            </div>
+
           </mat-expansion-panel>
 
 
-          <mat-expansion-panel class="mat-elevation-z0" *ngIf="item.subMenu.length==0" [hideToggle]="true" #prueba (expandedChange)=prueba.close() class="mat-elevation-z0">
-              <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
+          <mat-expansion-panel class="mat-elevation-z0" *ngIf="item.subMenu.length==0" [hideToggle]="true" #prueba
+            (expandedChange)=prueba.close() class="mat-elevation-z0">
+            <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
           </mat-expansion-panel>
 
 
-      
-      </div>
-      
-          <button mat-stroked-button>Login <mat-icon>expand_more</mat-icon></button>
+
+        </div>
+
+        <button mat-stroked-button>Login <mat-icon>expand_more</mat-icon></button>
 
 
 
@@ -200,18 +201,18 @@
 
 
 <div fxLayout="row" fxLayoutAlign="center center">
-  <mat-expansion-panel fxLayout="column" fxLayoutAlign="center"   fxFlex="75%" #searchBar [expanded]="false" class="mat-elevation-z0">
+  <mat-expansion-panel fxLayout="column" fxLayoutAlign="center" fxFlex="75%" #searchBar [expanded]="false"
+    class="mat-elevation-z0">
     <div class="div-supremo" fxLayoutAlign="center center" fxFlex="100%">
 
-      <mat-accordion fxLayout="row" fxLayoutAlign="center"  fxFlex="50%">
-        <input type="text" fxFlex="45%" placeholder="search..."/>
-        <button mat-flat-button color="accent"  class="btn-perso">
+      <mat-accordion fxLayout="row" fxLayoutAlign="center" fxFlex="50%">
+        <input type="text" fxFlex="45%" placeholder="search..." />
+        <button mat-flat-button color="accent" class="btn-perso">
           <mat-icon><span class="material-symbols-outlined">
-            search
-          </span></mat-icon>
+              search
+            </span></mat-icon>
         </button>
       </mat-accordion>
     </div>
   </mat-expansion-panel>
 </div>
-

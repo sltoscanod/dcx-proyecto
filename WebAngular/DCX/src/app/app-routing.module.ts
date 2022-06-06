@@ -60,40 +60,40 @@ import { OurPartnersComponent } from './main/pages/our-partners/our-partners.com
 // ];
 
 
-const routes:Routes=[
-    
-  {
-      path:'trade',
-      children:[
-          {path: 'rice_exchange', component:RiceExchangeComponent},
-          {path : 'fertilizer_exchange',component:FertilizerExchangeComponent},
-          {path : 'dcx_pulses',component:DcxPulsesComponent},
-          {path:'dcx_grains',component:DcxGrainsComponent}
-          
-      ]
-      
-  },
-  {
-      path:'services',
-      children:[
-          {path:'dcx_finance',component:DcxFinanceComponent},
-          {path:'dcx_freight',component:DcxFreightComponent},
-          {path:'dcx_insurance',component:DcxInsuranceComponent}
-      ]
-  },
-  {
-      path:'',
-      component:InicioComponent,
-      pathMatch: 'full'
-  },
-  {
-        path:'our-partners',
+const routes: Routes = [
+
+    {
+        path: 'trade',
+        children: [
+            { path: 'rice_exchange', component: RiceExchangeComponent },
+            { path: 'fertilizer_exchange', component: FertilizerExchangeComponent },
+            { path: 'dcx_pulses', component: DcxPulsesComponent },
+            { path: 'dcx_grains', component: DcxGrainsComponent }
+
+        ]
+
+    },
+    {
+        path: 'services',
+        children: [
+            { path: 'dcx_finance', component: DcxFinanceComponent },
+            { path: 'dcx_freight', component: DcxFreightComponent },
+            { path: 'dcx_insurance', component: DcxInsuranceComponent }
+        ]
+    },
+    {
+        path: '',
+        component: InicioComponent,
+        pathMatch: 'full'
+    },
+    {
+        path: 'our_partners',
         component: OurPartnersComponent
-      },
-  {
-      path: '**',
-      redirectTo:''
-  }
+    },
+    {
+        path: '**',
+        redirectTo: ''
+    }
 ];
 
 
@@ -102,7 +102,7 @@ const routes:Routes=[
 
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule]
 })
 export class AppRoutingModule { }
