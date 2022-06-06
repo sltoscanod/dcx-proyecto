@@ -2,7 +2,7 @@
   <mat-toolbar class="bg-white" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="10px"
     fxLayoutAlign.lt-lg="end">
 
-    <mat-toolbar-row fxLayoutGap="10px" fxLayoutAlign="center center" fxHide fxShow.gt-lg="true">
+    <mat-toolbar-row fxLayoutGap="10px" fxLayoutAlign="center center" fxHide fxShow.gt-md="true">
       <button mat-button fxLayout.lt-lg="row" fxLayoutAlign.lt-lg="start">
         <img src="../../../assets/images/logo.svg" routerLink="" width="110px">
       </button>
@@ -82,7 +82,7 @@
 
       </button>
     </mat-toolbar-row>
-    <mat-toolbar-row fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" fxShow="true" fxHide.gt-lg>
+    <mat-toolbar-row fxFlex="100%" fxLayout="row" fxLayoutAlign="space-between center" fxShow="true" fxHide.gt-md>
 
       <div>
         <button mat-button routerLink=""><img src="../../../assets/images/logo.svg" width="100"></button>
@@ -90,7 +90,7 @@
       </div>
       <div>
         <button mat-flat-button color="accent">Trade Now</button>
-        <button mat-button>
+        <button mat-button (click)="searchBar.toggle()">
           <mat-icon>search</mat-icon>
         </button>
         <button mat-button (click)="accordion.toggle()">
@@ -108,7 +108,7 @@
 
 </div>
 
-<div class="mat-elevation-z3">
+<div class="mat-elevation-z3" fxShow.lt-md="true" fxHide.gt-md>
 
   <div fxLayout="column">
 
@@ -122,7 +122,7 @@
             <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
 
             <div fxLayout="column" fxFlex="100%" fxLayoutAlign="start start">
-              <button mat-button fxFlex="100%" routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
+              <button mat-button fxFlex="100%" (click)="accordion.close()" routerLink="{{_navBar.data[i].text| lowercase }}/{{item|replace}}"
                 *ngFor="let item of _navBar.data[i].subMenu">{{item}}</button>
             </div>
 
@@ -131,15 +131,12 @@
 
           <mat-expansion-panel class="mat-elevation-z0" *ngIf="item.subMenu.length==0" [hideToggle]="true" #prueba
             (expandedChange)=prueba.close() class="mat-elevation-z0">
-            <mat-expansion-panel-header>{{item.text}}</mat-expansion-panel-header>
+            <mat-expansion-panel-header (click)="accordion.close()">{{item.text}}</mat-expansion-panel-header>
           </mat-expansion-panel>
 
 
 
         </div>
-
-        <button mat-stroked-button>Login <mat-icon>expand_more</mat-icon></button>
-
 
 
         <!-- <mat-expansion-panel class="mat-elevation-z0">
